@@ -1,6 +1,8 @@
 import Head from 'next/head'
 
-export default function Home() {
+const axios = require('axios').default;
+
+export default function index({ heros }) {
   return (
     <div>
       <Head>
@@ -9,9 +11,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-        <h1 className='font-bold text-center m-4 text-2xl'>SuperHero Identity Manager</h1>
+        <h1 className='font-bold text-center m-4 text-2xl'>SuperHero Identity Manager </h1>
+        <h5 className="text-center text-xs">{heros.length}</h5>
 
-        <div className='mt-10'>
+        <div className='mt-10 grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
           <div className='rounded-lg p-4 border-2 shadow-md max-w-sm m-4'>
             <h1 className='font-bold mt-4 text-2xl'>SuperHero Identity Manager</h1>
             <p>
@@ -21,8 +24,21 @@ export default function Home() {
             <button className='bg-blue-500 hover:bg-blue-700 mt-3 text-white py-2 px-4 rounded-full'>
               BUTTON
             </button>
-          </div></div>
+          </div>
+
+        </div>
       </main>
     </div>
   )
+}
+
+
+index.getInitialProps = async ()=>{
+  const res = await axios("http://localhost:3000/api/hero");
+  // console.log(res);
+  const { heros } = res.data;
+
+  return {
+    heros
+  };
 }
