@@ -5,7 +5,7 @@ dbConnect();
 
 // get a unique record - edit , delete
 
-export default async(req , res)=>{
+export default async function manageApi(req , res){
     const {
 
         // method of a request - POST / GET / PUT / DELETE 

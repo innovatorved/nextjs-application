@@ -1,5 +1,3 @@
-import React from 'react';
-// import next router
 import Router from 'next/router';
 
 const axios = require('axios').default;
@@ -12,7 +10,7 @@ export default function addNewHero() {
             realName: e.target.realName.value
         };
         try {
-            const res = await axios.post('http://localhost:3002/api/hero', hero);
+            const res = await axios.post('http://localhost:3000/api/hero', hero);
             if (res.data.success) {
                 e.target.superHero.value = '';
                 e.target.realName.value = '';

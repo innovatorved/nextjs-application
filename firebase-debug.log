@@ -1,0 +1,24 @@
+[debug] [2022-01-23T17:40:12.389Z] ----------------------------------------------------------------------
+[debug] [2022-01-23T17:40:12.391Z] Command:       /home/innovatorved/.nvm/versions/node/v17.0.1/bin/node /home/innovatorved/.nvm/versions/node/v17.0.1/bin/firebase login
+[debug] [2022-01-23T17:40:12.391Z] CLI Version:   10.1.2
+[debug] [2022-01-23T17:40:12.391Z] Platform:      linux
+[debug] [2022-01-23T17:40:12.391Z] Node Version:  v17.0.1
+[debug] [2022-01-23T17:40:12.555Z] Time:          Sun Jan 23 2022 23:10:12 GMT+0530 (India Standard Time)
+[debug] [2022-01-23T17:40:12.556Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-23T17:40:12.557Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=219600817&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-01-23T17:40:15.295Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-01-23T17:40:15.295Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-01-23T17:40:31.380Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+ {"code":"4/0AX4XfWip1jfB2qFr-QNEpThmQT9RjIW_T9a0AL7-M3Nv0vu89HGBrSuTCEJvTZvn0B20xg","client_id":"563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com","client_secret":"j9iVZfS8kkCEFUPaAeJV0sAi","redirect_uri":"http://localhost:9005","grant_type":"authorization_code"}
+[debug] [2022-01-23T17:40:31.731Z] <<< HTTP RESPONSE 200 {"date":"Sun, 23 Jan 2022 17:40:33 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-23T17:40:31.733Z] Error: ENOENT: no such file or directory, open '/home/innovatorved/.nvm/versions/node/v17.0.1/lib/node_modules/firebase-tools/templates/loginFailure.html'
+[error] 
+[error] Error: An unexpected error has occurred.

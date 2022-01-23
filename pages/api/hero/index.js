@@ -4,7 +4,7 @@ import Hero from '../../../models/hero';
 dbConnect();
 
 // Get All Records , post all records
-export default async (req , res) => {
+const manage =  async (req , res) => {
     const {method} = req;
 
     switch (method) {
@@ -32,3 +32,5 @@ export default async (req , res) => {
             break;
     }
 }
+
+export default manage;
